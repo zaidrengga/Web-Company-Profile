@@ -1,0 +1,88 @@
+{
+  "services": [
+    {
+      "title": "Web Development",
+      "desc": "Website responsif & SEO-friendly",
+      "image": "https://w3-lab.com/wp-content/uploads/2019/12/Get-the-Most-Fancied-Web-Development-Services-min-scaled.jpg"
+    },
+    {
+      "title": "Mobile App Development",
+      "desc": "Aplikasi Android & iOS",
+      "image": "https://static.vecteezy.com/system/resources/previews/000/523/046/original/vector-mobile-app-development-concept.jpg"
+    },
+    {
+      "title": "Digital Marketing",
+      "desc": "Pemasaran digital untuk bisnis Anda",
+      "image": "https://cdn.pixabay.com/photo/2020/12/09/03/10/digital-marketing-5816304_1280.jpg"
+    },
+    {
+      "title": "UI/UX Design",
+      "desc": "Desain UI/UX yang memukau",
+      "image": "https://static.vecteezy.com/system/resources/previews/021/535/161/original/ux-ui-design-word-concepts-dark-blue-banner-user-interface-basics-infographics-with-editable-icons-on-color-background-isolated-typography-illustration-with-text-vector.jpg"
+    },
+    {
+      "title": "Ai Solution",
+      "desc": "Chatbot & otomatisasi bisnis",
+      "image": "https://innovative.com.bd/assets/images/services/16299742471.jpg"
+    }
+  ],
+  "teams": [
+    {
+      "name": "John Doe",
+      "position": "CEO",
+      "image": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+      "name": "Jane Smith",
+      "position": "CTO",
+      "image": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    {
+      "name": "Alice Johnson",
+      "position": "Designer",
+      "image": "https://randomuser.me/api/portraits/women/3.jpg"
+    },
+    {
+      "name": "Bob Brown",
+      "position": "Developer",
+      "image": "https://randomuser.me/api/portraits/men/4.jpg"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Nama Proyek 1",
+      "description": "Deskripsi singkat tentang proyek, tujuan, dan teknologi yang digunakan.",
+      "image": "https://w3-lab.com/wp-content/uploads/2019/12/Get-the-Most-Fancied-Web-Development-Services-min-scaled.jpg",
+      "link": "/portfolio/project-name-1"
+    },
+    {
+      "title": "Nama Proyek 2",
+      "description": "Deskripsi singkat tentang proyek, tujuan, dan teknologi yang digunakan.",
+      "image": "https://static.vecteezy.com/system/resources/previews/000/523/046/original/vector-mobile-app-development-concept.jpg",
+      "link": "/portfolio/project-name-2"
+    },
+    {
+      "title": "Nama Proyek 3",
+      "description": "Deskripsi singkat tentang proyek, tujuan, dan teknologi yang digunakan.",
+      "image": "https://innovative.com.bd/assets/images/services/16299742471.jpg",
+      "link": "/portfolio/project-name-3"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "LuminoTech Solutions mengubah ide kami menjadi kenyataan dengan tim yang sangat profesional. Hasilnya luar biasa!",
+      "name": "John Doe",
+      "role": "CEO, Tech Company"
+    },
+    {
+      "quote": "Layanan yang diberikan sangat memuaskan. Tim LuminoTech sangat responsif dan hasilnya sesuai harapan.",
+      "name": "Jane Smith",
+      "role": "Founder, Startup"
+    },
+    {
+      "quote": "Kami sangat terkesan dengan kemampuan tim LuminoTech dalam menghadirkan solusi teknologi yang inovatif. Terima kasih!",
+      "name": "Alice Johnson",
+      "role": "CTO, E-commerce"
+    }
+  ]
+}

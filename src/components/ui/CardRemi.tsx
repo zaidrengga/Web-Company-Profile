@@ -26,7 +26,7 @@ const CardRemi = forwardRef<HTMLDivElement, CardRemiProps>(({ id, image, title, 
     })
 
     return (
-        <div className='w-full h-full' ref={ref} id={`card-${id}`}>
+        <div className='relative w-full h-full' ref={ref} id={`card-${id}`}>
             <div className="relative w-full h-full transform-3d gsap-animate-bronce" >
                 <div className='absolute inset-0  w-full h-full backface-hidden rounded-lg overflow-hidden flip-card-front'>
                     <Image src={cardRemi} alt={title} className="w-full h-full object-cover" />

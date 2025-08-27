@@ -92,27 +92,7 @@ const Home = () => {
     // Card Remi animation
     const cards = teamsContain.current?.querySelectorAll('.cards') as NodeListOf<HTMLElement>;
     if (!cards) return;
-    const positions = [-200, -75, 75, 200];
     const rotations = [-15, -7.5, 7.5, 15];
-
-    cardRemiRef.current.forEach((card, index) => {
-      if (!card) return;
-      gsap.to(
-        card,
-        {
-          x: `${positions[index]}%`,
-          rotation: rotations[index],
-          ease: "none",
-          scrollTrigger: {
-            trigger: cards,
-            start: "top 80%",
-            end: () => `+=${window.innerHeight}`,
-            scrub: 0.5,
-            id: `card-${index}`,
-          }
-        }
-      );
-    });
 
     cardRemiRef.current.forEach((card, index) => {
       if (!card) return;
@@ -125,8 +105,8 @@ const Home = () => {
 
       ScrollTrigger.create({
         trigger: card,
-        start: `top ${startOffset * 100}%`,
-        end: () => `+=${window.innerHeight * 2}`,
+        start: "-=400px",
+        end: "top center",
         scrub: 1,
         id: `card-flip-${index}`,
         onUpdate: (self) => {
@@ -142,6 +122,9 @@ const Home = () => {
             gsap.to(card, {
               rotate: cardRotation,
               ease: "power1.out",
+              onComplete: () => {
+                gsap.to(card, { rotate: 0, ease: "power1.out" });
+              },
             });
           }
         },
@@ -247,12 +230,12 @@ const Home = () => {
 
       <div id='portfolio'>
         {/* Team section */}
-        <section className="h-[300vh] w-full relative" ref={teamsContain}>
-          <div className="w-full flex flex-col items-center justify-center pt-20 sticky top-0 bg-black">
-            <h1 className='md:text-4xl text-2xl font-bold mb-4 split-text text-title'>Teams <span className='underline-gradient'></span></h1>
-            <div className="w-full h-[70vh] flex items-center justify-center relative">
+        <section className="min-h-screen w-full relative" ref={teamsContain}>
+          <div className="w-full h-full flex flex-col items-center justify-center pt-20 bg-black">
+            <h1 className='md:text-4xl text-2xl font-bold mb-20 split-text text-title '>Teams <span className='underline-gradient'></span></h1>
+            <div className="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 px-10">
               {teams.map((team, index) => (
-                <div className="absolute w-full max-w-[200px] h-full max-h-[300px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 perspective-[1000px] cards"
+                <div className="w-[200px] h-[280px] mx-auto perspective-[1000px] cards"
                   key={index}>
                   <CardRemi
                     id={team.name}
